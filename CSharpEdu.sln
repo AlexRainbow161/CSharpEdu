@@ -12,6 +12,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{A98CF90D-8
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleInputOutput", "ConsoleInputOutput\ConsoleInputOutput.csproj", "{12C92700-4F7A-438B-B230-73994F2D3924}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{C8D4FAAC-62E0-4957-90C7-3D0115A58EA6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,12 +26,22 @@ Global
 		{0486C6C9-B8C9-4E3B-84E3-31D4C1DE552B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0486C6C9-B8C9-4E3B-84E3-31D4C1DE552B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0486C6C9-B8C9-4E3B-84E3-31D4C1DE552B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12C92700-4F7A-438B-B230-73994F2D3924}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12C92700-4F7A-438B-B230-73994F2D3924}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12C92700-4F7A-438B-B230-73994F2D3924}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12C92700-4F7A-438B-B230-73994F2D3924}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8D4FAAC-62E0-4957-90C7-3D0115A58EA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8D4FAAC-62E0-4957-90C7-3D0115A58EA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8D4FAAC-62E0-4957-90C7-3D0115A58EA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8D4FAAC-62E0-4957-90C7-3D0115A58EA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0486C6C9-B8C9-4E3B-84E3-31D4C1DE552B} = {6140AE04-6E29-498D-AA61-275A03E96AFE}
+		{12C92700-4F7A-438B-B230-73994F2D3924} = {6140AE04-6E29-498D-AA61-275A03E96AFE}
+		{C8D4FAAC-62E0-4957-90C7-3D0115A58EA6} = {6140AE04-6E29-498D-AA61-275A03E96AFE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {27BB04B9-A10E-4B99-AECA-6C5B2E35C75F}
