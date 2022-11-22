@@ -6,25 +6,39 @@ namespace Calculator
     {
         public static void Main(string[] args)
         {
-            Log(message: "Введите выражение: ", withNewLine: false);
-
-            var userInput = Console.ReadLine();
-
-            args = userInput.Split(" ");
-
-            if (args.Length > 3 || args.Length < 3)
+            while (true)
             {
-                Log("Внимание! Ошибка в выражении. Используйте простые выражения вида \"2 + 2\"");
-                return;
+                Calculate();
             }
+        }
 
+        private static void Calculate()
+        {
             try
             {
-                int x = int.Parse(args[0]);
-                int y = int.Parse(args[2]);
+                Log(message: "Введите выражение: ", withNewLine: false);
+
+                var userInput = Console.ReadLine();
+
+                if (userInput == null)
+                {
+                    return;
+                }
+
+                var args = userInput.Split(" ");
+
+                if (args.Length > 3 || args.Length < 3)
+                {
+                    Log("Внимание! Ошибка в выражении. Используйте простые выражения вида \"2 + 2\"");
+                    return;
+                }
+
+
+                decimal x = decimal.Parse(args[0].Replace(".", ","));
+                decimal y = decimal.Parse(args[2].Replace(".", ","));
                 string op = args[1];
 
-                int result;
+                decimal result;
 
                 switch (op)
                 {
@@ -51,12 +65,10 @@ namespace Calculator
             {
                 Log("Неправильный формат числа.");
             }
-            catch(Exception)
+            catch (Exception)
             {
                 Log("Что то пошло не так.");
             }
-
-            
         }
 
         private static void Log(string message, bool printDateTime = false, bool withNewLine = true)
@@ -72,10 +84,9 @@ namespace Calculator
                 Console.Write(message);
         }
 
-        private static int Add(int x, int y) => x + y;
-        private static int Minus(int x, int y) => x - y;
-        private static int Multiply(int x, int y) => x * y;
-        private static int Devide(int x, int y) => x / y;
-
+        private static decimal Add(decimal x, decimal y) => x + y;
+        private static decimal Minus(decimal x, decimal y) => x - y;
+        private static decimal Multiply(decimal x, decimal y) => x * y;
+        private static decimal Devide(decimal x, decimal y) => x / y;
     }
 }
